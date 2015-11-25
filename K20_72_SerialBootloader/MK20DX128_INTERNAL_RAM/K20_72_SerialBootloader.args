@@ -1,0 +1,15 @@
+"./Project_Settings/Startup_Code/kinetis_sysinit_c.obj"
+"./Sources/bootloader/bootloader_c.obj"
+"./Sources/flash/flash_kinetis_c.obj"
+"./Sources/rs232/rs232_c.obj"
+-proc cortex-m4
+-fp soft
+-little
+-msgstyle parseable
+-g3
+-thumb
+-interworking
+-lavender model=ewl ,print=int ,scan=int ,io=raw
+"$(ProjDirPath)/Project_Settings/Linker_Files/MK20DX128_ram.lcf"
+-main __thumb_startup
+-L"$(MCUToolsBaseDirEnv)/ARM_EABI_Support/ewl/lib"

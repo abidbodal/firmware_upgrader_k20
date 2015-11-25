@@ -1,0 +1,11 @@
+################################################################################
+# These macros are used by makefiles and argument files.
+# When a space is included in the path and quotes (") cannot be used,
+# a _ESCAPE version of the macro is added that escapes the space with backslash (\).
+################################################################################
+
+export GNU_Make_Install_DirEnv=$(CWInstallLocationEnv)/gnu/bin
+export ProjDirPath=C:/Users/esmail/Desktop/merlin/3DTurnTable/formFactorBoard/K20 bootloader and user code/K20 bootloader and user code/K20_72_SerialBootloader
+export CWInstallLocationEnv=C:/Freescale/CW MCU v10.6
+export MCUToolsBaseDirEnv=$(CWInstallLocationEnv)/MCU
+export ARM_ToolsDirEnv=$(CWInstallLocationEnv)/MCU/ARM_Tools/Command_Line_Tools

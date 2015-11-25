@@ -1,0 +1,32 @@
+-proc cortex-m4
+-fp soft
+-little
+-msgstyle parseable
+-g3
+-thumb
+-interworking
+-lavender model=ewl ,print=int ,scan=int ,io=raw
+-cwd include
+-enc ascii
+-i
+"$(ProjDirPath)/Project_Headers"
+-i
+"$(ProjDirPath)/Sources/flash"
+-i
+"$(ProjDirPath)/Sources/wdg"
+-i
+"$(ProjDirPath)/Sources/rs232"
+-i
+"$(ProjDirPath)/Sources/crc"
+-i
+"$(MCUToolsBaseDirEnv)/ARM_EABI_Support/ewl/EWL_C/include"
+-i
+"$(ProjDirPath)/Sources/bootloader"
+-i
+"$(ProjDirPath)/Sources"
+-inline on
+-generic_symbol_names off
+-sdata 8
+-char signed
+-Cpp_Exceptions off
+-iso_templates on
